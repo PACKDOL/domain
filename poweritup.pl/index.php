@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <title>SLOT16 Situs Judi Slot Online Gampang Maxwin Deposit Langsung Gacor</title>
     <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
-    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/xdW3J2Ck/slot16.png" />a
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/xdW3J2Ck/slot16.png" />
     <link rel="amphtml" href="https://pub-9ac899cf166c498fa482c500908726f0.r2.dev/amps16.html" />
     <link rel="canonical" href="https://www.poweritup.pl/slot16/" />
     <meta name="google-site-verification" content="tstfpGohxmCLRWLcDhY6sKt1KhOkqJMRuu5aHGPY7kM" />
