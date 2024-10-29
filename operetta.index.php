@@ -577,7 +577,7 @@
           </script>
     <script type="application/ld+json">
             {
-              "name": "IBOSLOT | Portal Digital Situs Slot Deposit via Dana 5000 \u2014 Deposit 5000 Via dana tanpa potongan
+              "name": "IBOSLOT | Portal Digital Situs Slot Deposit via Dana 5000 \u2014 Deposit 5000 Via dana tanpa potongan",
               "image": "https://i.postimg.cc/fbR2KL1H/imggh.jpg",
               "description": "Mainkan slot deposit via dana terbaru 2024 di IBOSLOT! Peluang menang besar, bonus melimpah, dan jackpot menggiurkan menantimu di sini",
               "brand": "Slot Deposit Dana",
