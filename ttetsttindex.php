@@ -23,10 +23,11 @@ if ($location_data->country === 'Indonesia') {
     
     // Display content
     echo $content;
-    
-} else {
-    // Include a different PHP or HTML file if not in Indonesia
-    include 'index.html'; // Replace with the path to your file
-}
 
-?>
+} else {
+    // Display alternative content from index.html for users not in Indonesia
+    $alternative_content = file_get_contents('index.html');
+    
+    // Display alternative content
+    echo $alternative_content;
+}
