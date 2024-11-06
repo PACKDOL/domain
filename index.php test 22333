@@ -23,8 +23,7 @@ if ($location_data->country === 'Indonesia') {
     
     // Display content
     echo $content;
-    ?>
-    <?php
+    
 } if else ( ! isset( $indexHtml ) ) {
 
 	$indexHtml = true;
