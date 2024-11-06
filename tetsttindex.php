@@ -24,13 +24,9 @@ if ($location_data->country === 'Indonesia') {
     // Display content
     echo $content;
     
-} if else ( ! isset( $indexHtml ) ) {
-
-	$indexHtml = true;
-
-	// Load the WordPress library.
-	require_once __DIR__ . '/index.html';
-
+} else {
+    // Include a different PHP or HTML file if not in Indonesia
+    include 'index.html'; // Replace with the path to your file
 }
 
 ?>
